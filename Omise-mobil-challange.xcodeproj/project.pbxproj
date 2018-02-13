@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65DD16CB746C19316F6B5B46 /* Pods_Omise_mobil_challange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8475DF22A57436E3AEF20C7F /* Pods_Omise_mobil_challange.framework */; };
 		680322DF2033644900E38E1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680322DE2033644900E38E1B /* AppDelegate.swift */; };
 		680322E12033644900E38E1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680322E02033644900E38E1B /* ViewController.swift */; };
 		680322E42033644900E38E1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680322E22033644900E38E1B /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		259DE680958BFF47F02B6008 /* Pods-Omise-mobil-challange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omise-mobil-challange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Omise-mobil-challange/Pods-Omise-mobil-challange.debug.xcconfig"; sourceTree = "<group>"; };
+		45F4519F3A3935487E8E708C /* Pods-Omise-mobil-challange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omise-mobil-challange.release.xcconfig"; path = "Pods/Target Support Files/Pods-Omise-mobil-challange/Pods-Omise-mobil-challange.release.xcconfig"; sourceTree = "<group>"; };
 		680322DB2033644900E38E1B /* Omise-mobil-challange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Omise-mobil-challange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		680322DE2033644900E38E1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		680322E02033644900E38E1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		680322E52033644900E38E1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		680322E82033644900E38E1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		680322EA2033644900E38E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8475DF22A57436E3AEF20C7F /* Pods_Omise_mobil_challange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Omise_mobil_challange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DD16CB746C19316F6B5B46 /* Pods_Omise_mobil_challange.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AF123544637BC7D2A2AC225 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8475DF22A57436E3AEF20C7F /* Pods_Omise_mobil_challange.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		455F8E8EF1D07E31B930D7A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				259DE680958BFF47F02B6008 /* Pods-Omise-mobil-challange.debug.xcconfig */,
+				45F4519F3A3935487E8E708C /* Pods-Omise-mobil-challange.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		680322D22033644900E38E1B = {
 			isa = PBXGroup;
 			children = (
 				680322DD2033644900E38E1B /* Omise-mobil-challange */,
 				680322DC2033644900E38E1B /* Products */,
+				455F8E8EF1D07E31B930D7A1 /* Pods */,
+				3AF123544637BC7D2A2AC225 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 680322ED2033644900E38E1B /* Build configuration list for PBXNativeTarget "Omise-mobil-challange" */;
 			buildPhases = (
+				2D40CDFB7ADE10F7992A699A /* [CP] Check Pods Manifest.lock */,
 				680322D72033644900E38E1B /* Sources */,
 				680322D82033644900E38E1B /* Frameworks */,
 				680322D92033644900E38E1B /* Resources */,
+				C065E2B8C9D821087308BEE6 /* [CP] Embed Pods Frameworks */,
+				FC77F9014864CED9AFB7CA93 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D40CDFB7ADE10F7992A699A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Omise-mobil-challange-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C065E2B8C9D821087308BEE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Omise-mobil-challange/Pods-Omise-mobil-challange-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Omise-mobil-challange/Pods-Omise-mobil-challange-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC77F9014864CED9AFB7CA93 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Omise-mobil-challange/Pods-Omise-mobil-challange-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		680322D72033644900E38E1B /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		680322EE2033644900E38E1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 259DE680958BFF47F02B6008 /* Pods-Omise-mobil-challange.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -288,6 +370,7 @@
 		};
 		680322EF2033644900E38E1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45F4519F3A3935487E8E708C /* Pods-Omise-mobil-challange.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
