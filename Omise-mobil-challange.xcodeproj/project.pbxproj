@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		65DD16CB746C19316F6B5B46 /* Pods_Omise_mobil_challange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8475DF22A57436E3AEF20C7F /* Pods_Omise_mobil_challange.framework */; };
 		680322DF2033644900E38E1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680322DE2033644900E38E1B /* AppDelegate.swift */; };
-		680322E12033644900E38E1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680322E02033644900E38E1B /* ViewController.swift */; };
+		680322E12033644900E38E1B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680322E02033644900E38E1B /* BaseVC.swift */; };
 		680322E42033644900E38E1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680322E22033644900E38E1B /* Main.storyboard */; };
 		680322E62033644900E38E1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680322E52033644900E38E1B /* Assets.xcassets */; };
 		680322E92033644900E38E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680322E72033644900E38E1B /* LaunchScreen.storyboard */; };
+		68BCE6602033678300CA8FB6 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BCE65F2033678300CA8FB6 /* ViewHelper.swift */; };
+		68BCE663203368BC00CA8FB6 /* CharityListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BCE662203368BC00CA8FB6 /* CharityListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +22,13 @@
 		45F4519F3A3935487E8E708C /* Pods-Omise-mobil-challange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omise-mobil-challange.release.xcconfig"; path = "Pods/Target Support Files/Pods-Omise-mobil-challange/Pods-Omise-mobil-challange.release.xcconfig"; sourceTree = "<group>"; };
 		680322DB2033644900E38E1B /* Omise-mobil-challange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Omise-mobil-challange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		680322DE2033644900E38E1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		680322E02033644900E38E1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		680322E02033644900E38E1B /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		680322E32033644900E38E1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		680322E52033644900E38E1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		680322E82033644900E38E1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		680322EA2033644900E38E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68BCE65F2033678300CA8FB6 /* ViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHelper.swift; sourceTree = "<group>"; };
+		68BCE662203368BC00CA8FB6 /* CharityListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityListVC.swift; sourceTree = "<group>"; };
 		8475DF22A57436E3AEF20C7F /* Pods_Omise_mobil_challange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Omise_mobil_challange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,14 +82,48 @@
 		680322DD2033644900E38E1B /* Omise-mobil-challange */ = {
 			isa = PBXGroup;
 			children = (
+				68BCE666203369A100CA8FB6 /* Views */,
+				68BCE6652033699C00CA8FB6 /* Models */,
+				68BCE65E2033675C00CA8FB6 /* Extensions */,
+				68BCE65B2033663800CA8FB6 /* Controllers */,
 				680322DE2033644900E38E1B /* AppDelegate.swift */,
-				680322E02033644900E38E1B /* ViewController.swift */,
 				680322E22033644900E38E1B /* Main.storyboard */,
 				680322E52033644900E38E1B /* Assets.xcassets */,
 				680322E72033644900E38E1B /* LaunchScreen.storyboard */,
 				680322EA2033644900E38E1B /* Info.plist */,
 			);
 			path = "Omise-mobil-challange";
+			sourceTree = "<group>";
+		};
+		68BCE65B2033663800CA8FB6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				680322E02033644900E38E1B /* BaseVC.swift */,
+				68BCE662203368BC00CA8FB6 /* CharityListVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		68BCE65E2033675C00CA8FB6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				68BCE65F2033678300CA8FB6 /* ViewHelper.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		68BCE6652033699C00CA8FB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68BCE666203369A100CA8FB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,8 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				680322E12033644900E38E1B /* ViewController.swift in Sources */,
+				680322E12033644900E38E1B /* BaseVC.swift in Sources */,
+				68BCE6602033678300CA8FB6 /* ViewHelper.swift in Sources */,
 				680322DF2033644900E38E1B /* AppDelegate.swift in Sources */,
+				68BCE663203368BC00CA8FB6 /* CharityListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
