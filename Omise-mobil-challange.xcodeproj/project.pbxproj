@@ -13,8 +13,10 @@
 		680322E42033644900E38E1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680322E22033644900E38E1B /* Main.storyboard */; };
 		680322E62033644900E38E1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680322E52033644900E38E1B /* Assets.xcassets */; };
 		680322E92033644900E38E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680322E72033644900E38E1B /* LaunchScreen.storyboard */; };
+		684EBD692034B7F500CC7B32 /* CharityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EBD682034B7F500CC7B32 /* CharityTableViewCell.swift */; };
 		68BCE6602033678300CA8FB6 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BCE65F2033678300CA8FB6 /* ViewHelper.swift */; };
 		68BCE663203368BC00CA8FB6 /* CharityListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BCE662203368BC00CA8FB6 /* CharityListVC.swift */; };
+		68BCE66A2033E5D800CA8FB6 /* CharityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BCE6692033E5D800CA8FB6 /* CharityModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +29,10 @@
 		680322E52033644900E38E1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		680322E82033644900E38E1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		680322EA2033644900E38E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		684EBD682034B7F500CC7B32 /* CharityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityTableViewCell.swift; sourceTree = "<group>"; };
 		68BCE65F2033678300CA8FB6 /* ViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHelper.swift; sourceTree = "<group>"; };
 		68BCE662203368BC00CA8FB6 /* CharityListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityListVC.swift; sourceTree = "<group>"; };
+		68BCE6692033E5D800CA8FB6 /* CharityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityModel.swift; sourceTree = "<group>"; };
 		8475DF22A57436E3AEF20C7F /* Pods_Omise_mobil_challange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Omise_mobil_challange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +119,7 @@
 		68BCE6652033699C00CA8FB6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				68BCE6692033E5D800CA8FB6 /* CharityModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 		68BCE666203369A100CA8FB6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				684EBD682034B7F500CC7B32 /* CharityTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,10 +229,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Omise-mobil-challange/Pods-Omise-mobil-challange-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -257,7 +265,9 @@
 			files = (
 				680322E12033644900E38E1B /* BaseVC.swift in Sources */,
 				68BCE6602033678300CA8FB6 /* ViewHelper.swift in Sources */,
+				684EBD692034B7F500CC7B32 /* CharityTableViewCell.swift in Sources */,
 				680322DF2033644900E38E1B /* AppDelegate.swift in Sources */,
+				68BCE66A2033E5D800CA8FB6 /* CharityModel.swift in Sources */,
 				68BCE663203368BC00CA8FB6 /* CharityListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +409,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Omise-mobil-challange/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sadikekinozbay.Omise-mobil-challange";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +427,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Omise-mobil-challange/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sadikekinozbay.Omise-mobil-challange";
 				PRODUCT_NAME = "$(TARGET_NAME)";

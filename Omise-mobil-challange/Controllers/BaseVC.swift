@@ -10,6 +10,8 @@ import UIKit
 
 class BaseVC: UIViewController, UINavigationControllerDelegate  {
     
+    let baseURL = "https://virtserver.swaggerhub.com/chakritw/tamboon-api/1.0.0/"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.delegate = self
