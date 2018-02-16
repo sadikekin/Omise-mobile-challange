@@ -7,21 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65DD16CB746C19316F6B5B46 /* Pods_Omise_mobil_challange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8475DF22A57436E3AEF20C7F /* Pods_Omise_mobil_challange.framework */; };
 		680322DF2033644900E38E1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680322DE2033644900E38E1B /* AppDelegate.swift */; };
 		680322E12033644900E38E1B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680322E02033644900E38E1B /* BaseVC.swift */; };
 		680322E42033644900E38E1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680322E22033644900E38E1B /* Main.storyboard */; };
 		680322E62033644900E38E1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680322E52033644900E38E1B /* Assets.xcassets */; };
 		680322E92033644900E38E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680322E72033644900E38E1B /* LaunchScreen.storyboard */; };
 		684EBD692034B7F500CC7B32 /* CharityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EBD682034B7F500CC7B32 /* CharityTableViewCell.swift */; };
+		684EBD6B2035380600CC7B32 /* DonationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EBD6A2035380600CC7B32 /* DonationVC.swift */; };
+		684EBD6F203540B400CC7B32 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684EBD6E203540B400CC7B32 /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		684EBD71203540B700CC7B32 /* OmiseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684EBD70203540B700CC7B32 /* OmiseSDK.framework */; };
+		684EBD73203540BB00CC7B32 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684EBD72203540BB00CC7B32 /* SwiftyJSON.framework */; };
 		68BCE6602033678300CA8FB6 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BCE65F2033678300CA8FB6 /* ViewHelper.swift */; };
 		68BCE663203368BC00CA8FB6 /* CharityListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BCE662203368BC00CA8FB6 /* CharityListVC.swift */; };
 		68BCE66A2033E5D800CA8FB6 /* CharityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BCE6692033E5D800CA8FB6 /* CharityModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		259DE680958BFF47F02B6008 /* Pods-Omise-mobil-challange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omise-mobil-challange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Omise-mobil-challange/Pods-Omise-mobil-challange.debug.xcconfig"; sourceTree = "<group>"; };
-		45F4519F3A3935487E8E708C /* Pods-Omise-mobil-challange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Omise-mobil-challange.release.xcconfig"; path = "Pods/Target Support Files/Pods-Omise-mobil-challange/Pods-Omise-mobil-challange.release.xcconfig"; sourceTree = "<group>"; };
 		680322DB2033644900E38E1B /* Omise-mobil-challange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Omise-mobil-challange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		680322DE2033644900E38E1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		680322E02033644900E38E1B /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -30,10 +31,13 @@
 		680322E82033644900E38E1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		680322EA2033644900E38E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		684EBD682034B7F500CC7B32 /* CharityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityTableViewCell.swift; sourceTree = "<group>"; };
+		684EBD6A2035380600CC7B32 /* DonationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationVC.swift; sourceTree = "<group>"; };
+		684EBD6E203540B400CC7B32 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		684EBD70203540B700CC7B32 /* OmiseSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OmiseSDK.framework; path = Carthage/Build/iOS/OmiseSDK.framework; sourceTree = "<group>"; };
+		684EBD72203540BB00CC7B32 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		68BCE65F2033678300CA8FB6 /* ViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHelper.swift; sourceTree = "<group>"; };
 		68BCE662203368BC00CA8FB6 /* CharityListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityListVC.swift; sourceTree = "<group>"; };
 		68BCE6692033E5D800CA8FB6 /* CharityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityModel.swift; sourceTree = "<group>"; };
-		8475DF22A57436E3AEF20C7F /* Pods_Omise_mobil_challange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Omise_mobil_challange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,37 +45,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65DD16CB746C19316F6B5B46 /* Pods_Omise_mobil_challange.framework in Frameworks */,
+				684EBD6F203540B400CC7B32 /* Alamofire.framework in Frameworks */,
+				684EBD71203540B700CC7B32 /* OmiseSDK.framework in Frameworks */,
+				684EBD73203540BB00CC7B32 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3AF123544637BC7D2A2AC225 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8475DF22A57436E3AEF20C7F /* Pods_Omise_mobil_challange.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		455F8E8EF1D07E31B930D7A1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				259DE680958BFF47F02B6008 /* Pods-Omise-mobil-challange.debug.xcconfig */,
-				45F4519F3A3935487E8E708C /* Pods-Omise-mobil-challange.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		680322D22033644900E38E1B = {
 			isa = PBXGroup;
 			children = (
 				680322DD2033644900E38E1B /* Omise-mobil-challange */,
 				680322DC2033644900E38E1B /* Products */,
-				455F8E8EF1D07E31B930D7A1 /* Pods */,
-				3AF123544637BC7D2A2AC225 /* Frameworks */,
+				684EBD6D203540B400CC7B32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +87,22 @@
 			path = "Omise-mobil-challange";
 			sourceTree = "<group>";
 		};
+		684EBD6D203540B400CC7B32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				684EBD72203540BB00CC7B32 /* SwiftyJSON.framework */,
+				684EBD70203540B700CC7B32 /* OmiseSDK.framework */,
+				684EBD6E203540B400CC7B32 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		68BCE65B2033663800CA8FB6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				680322E02033644900E38E1B /* BaseVC.swift */,
 				68BCE662203368BC00CA8FB6 /* CharityListVC.swift */,
+				684EBD6A2035380600CC7B32 /* DonationVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -139,12 +138,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 680322ED2033644900E38E1B /* Build configuration list for PBXNativeTarget "Omise-mobil-challange" */;
 			buildPhases = (
-				2D40CDFB7ADE10F7992A699A /* [CP] Check Pods Manifest.lock */,
 				680322D72033644900E38E1B /* Sources */,
 				680322D82033644900E38E1B /* Frameworks */,
 				680322D92033644900E38E1B /* Resources */,
-				C065E2B8C9D821087308BEE6 /* [CP] Embed Pods Frameworks */,
-				FC77F9014864CED9AFB7CA93 /* [CP] Copy Pods Resources */,
+				684EBD752035431400CC7B32 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -203,58 +200,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D40CDFB7ADE10F7992A699A /* [CP] Check Pods Manifest.lock */ = {
+		684EBD752035431400CC7B32 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OmiseSDK.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Omise-mobil-challange-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C065E2B8C9D821087308BEE6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Omise-mobil-challange/Pods-Omise-mobil-challange-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Omise-mobil-challange/Pods-Omise-mobil-challange-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC77F9014864CED9AFB7CA93 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Omise-mobil-challange/Pods-Omise-mobil-challange-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -269,6 +229,7 @@
 				680322DF2033644900E38E1B /* AppDelegate.swift in Sources */,
 				68BCE66A2033E5D800CA8FB6 /* CharityModel.swift in Sources */,
 				68BCE663203368BC00CA8FB6 /* CharityListVC.swift in Sources */,
+				684EBD6B2035380600CC7B32 /* DonationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,11 +364,14 @@
 		};
 		680322EE2033644900E38E1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 259DE680958BFF47F02B6008 /* Pods-Omise-mobil-challange.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Omise-mobil-challange/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -421,11 +385,14 @@
 		};
 		680322EF2033644900E38E1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45F4519F3A3935487E8E708C /* Pods-Omise-mobil-challange.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Omise-mobil-challange/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

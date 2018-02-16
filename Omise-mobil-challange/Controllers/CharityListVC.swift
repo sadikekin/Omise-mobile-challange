@@ -52,6 +52,10 @@ class CharityListVC: BaseVC, UITableViewDelegate, UITableViewDataSource{
             }
         }
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.view.backgroundColor = .white
+    }
     
     override func setupAnchors() {
         _ = nameLabel.anchor(self.view.topAnchor, left: self.view.leftAnchor, bottom: nil, right: self.view.rightAnchor, topConstant: 12, leftConstant: 6, bottomConstant: 0, rightConstant: 6, widthConstant: 0, heightConstant: 128)
@@ -83,7 +87,9 @@ class CharityListVC: BaseVC, UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let donationVC = DonationVC()
+        donationVC.charity = charity[indexPath.item]
+        self.present(donationVC, animated: true, completion: nil)
     }
 
 }

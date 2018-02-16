@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import OmiseSDK
 extension UIView {
     
     func anchor(_ top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, topConstant: CGFloat = 0, leftConstant: CGFloat = 0, bottomConstant: CGFloat = 0, rightConstant: CGFloat = 0, widthConstant: CGFloat = 0, heightConstant: CGFloat = 0) -> [NSLayoutConstraint] {
@@ -64,6 +64,24 @@ extension UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+}
+
+extension DonationVC {
+    func creditCardForm(controller: CreditCardFormController, didSucceedWithToken token: OmiseToken) {
+        didTapCloseForm()
+        print("token created: \(String(describing: token.tokenId))")
+        
+        let alert = UIAlertController(title: "Token", message: token.tokenId, preferredStyle: .alert)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func creditCardForm(controller: CreditCardFormController, didFailWithError error: Error) {
+        didTapCloseForm()
+        print("error: \(error)")
+        
+        let alert = UIAlertController(title: "Error", message: "\(error)", preferredStyle: .alert)
+        present(alert, animated: true, completion: nil)
     }
 }
 
