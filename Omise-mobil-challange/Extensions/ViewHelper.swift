@@ -67,24 +67,6 @@ extension UIViewController {
     }
 }
 
-extension DonationVC {
-    func creditCardForm(controller: CreditCardFormController, didSucceedWithToken token: OmiseToken) {
-        didTapCloseForm()
-        print("token created: \(String(describing: token.tokenId))")
-        
-        let alert = UIAlertController(title: "Token", message: token.tokenId, preferredStyle: .alert)
-        present(alert, animated: true, completion: nil)
-    }
-    
-    func creditCardForm(controller: CreditCardFormController, didFailWithError error: Error) {
-        didTapCloseForm()
-        print("error: \(error)")
-        
-        let alert = UIAlertController(title: "Error", message: "\(error)", preferredStyle: .alert)
-        present(alert, animated: true, completion: nil)
-    }
-}
-
 
 
 

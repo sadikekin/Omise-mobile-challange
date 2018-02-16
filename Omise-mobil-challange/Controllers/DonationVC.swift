@@ -8,6 +8,7 @@
 
 import UIKit
 import OmiseSDK
+import Alamofire
 
 class DonationVC: BaseVC, CreditCardFormDelegate{
     
@@ -96,17 +97,20 @@ class DonationVC: BaseVC, CreditCardFormDelegate{
     }
     
     @objc func didTapCheckout() {
-        
-        print(amountInput.text)
-        
-        let closeButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(didTapCloseForm))
-        
-        let creditCardForm = CreditCardFormController.makeCreditCardForm(withPublicKey: publicKey)
-        creditCardForm.delegate = self
-        creditCardForm.navigationItem.rightBarButtonItem = closeButton
-        
-        let navigationController = UINavigationController(rootViewController: creditCardForm)
-        present(navigationController, animated: true, completion: nil)
+        if(amountInput.text == ""){
+            let errorAlert = UIAlertController(title: "Error", message: "Donation amount can not be empty", preferredStyle: .alert)
+            errorAlert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
+            self.present(errorAlert, animated: true, completion: nil)
+        }else{
+            let closeButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(didTapCloseForm))
+            
+            let creditCardForm = CreditCardFormController.makeCreditCardForm(withPublicKey: publicKey)
+            creditCardForm.delegate = self
+            creditCardForm.navigationItem.rightBarButtonItem = closeButton
+            
+            let navigationController = UINavigationController(rootViewController: creditCardForm)
+            present(navigationController, animated: true, completion: nil)
+        }
     }
     
     @objc func didTapCloseForm() {
@@ -114,11 +118,36 @@ class DonationVC: BaseVC, CreditCardFormDelegate{
     }
     
     func creditCardForm(_ controller: CreditCardFormController, didSucceedWithToken token: OmiseToken) {
-        print("succes")
+        didTapCloseForm()
+        
+        let givenParamaters = [
+            "name": token.card?.name ?? "",
+            "token": token.tokenId ?? "",
+            "amount": amountInput.text ?? ""
+        ]
+        
+        Alamofire.request(baseURL+"donations", method:.post, parameters:givenParamaters).responseJSON { response in
+            switch response.result {
+            case .success:
+                print(response)
+                
+            case .failure(let error):
+                print(error)
+            }
+            
+        }
+        
+        let successAlert = UIAlertController(title: "Succes", message: "Your donation is on the way", preferredStyle: .alert)
+        successAlert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
+        present(successAlert, animated: true, completion: nil)
     }
     
     func creditCardForm(_ controller: CreditCardFormController, didFailWithError error: Error) {
-        print("error")
+        didTapCloseForm()
+        print("error: \(error)")
+        
+        let alert = UIAlertController(title: "Error", message: "Something bad happened", preferredStyle: .alert)
+        present(alert, animated: true, completion: nil)
     }
 
 }
